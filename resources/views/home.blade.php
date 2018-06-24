@@ -21,8 +21,8 @@
                 </div>
                 <div class="panel-footer">
                     <button class="btn btn-info btn-xs" data-toggle="modal" data-target="#uploadModel">Change Profile Image</button>
-                    <a href="{{ url('/all_users/' . Auth::user()->id . '/edit') }}"><button type="button" rel="tooltip" data-placement="left" title="Edit Profile" class="btn btn-success btn-xs">Edit Profile</button></a>
-                    <a href="{{ url('/all_users') }}" class="btn btn-danger btn-xs">View all user</a>
+                    <a href="{{ url('/user/crud/' . Auth::user()->id . '/edit') }}"><button type="button" rel="tooltip" data-placement="left" title="Edit Profile" class="btn btn-success btn-xs">Edit Profile</button></a>
+                    <a href="{{ url('/user/crud') }}" class="btn btn-danger btn-xs">User crud</a>
                 </div>
             </div>
         </div>

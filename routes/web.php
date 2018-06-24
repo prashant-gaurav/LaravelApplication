@@ -21,6 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
 
-Route::resource('/all_users', 'ManageUsers');
+Route::resource('/user/crud', 'ManageUsers');
 //ajax upload
 Route::post('ajax/upload', ['as'=>'ajax.upload','uses'=>'ManageUsers@ajaxUploadImage']);
